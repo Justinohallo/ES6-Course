@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+<h1> You are able to update any variable declared using var. Scoping means, where are these availabel?
+    Var variables are only available in function scope or function scope. You are able to edit them using the developer tools. 
+    Curly brackets are gates of the function. Anything declared inside are not able to be used. You want to keep variables inside of your function. 
+
+</h1>
+        
+        <script >
+            fuction setWidth() {
+                var width = 100
+                console.log(width)
+            };
+            setWidth()
+            var age = 100;
+            if(age >12) {
+                var dogYears = age *7;
+                console.log('You are ${dogYears} dog years old! ')
+            }
+        var width = 100;
+        let height = 200;
+        const key = 'abcd123'
+        </script>
+    </body>
+</html>
