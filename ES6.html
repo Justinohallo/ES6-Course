@@ -20,6 +20,10 @@
     <li> Using var in an if statement creates a data leak.  </li>
 </ul>
 
+<h3> Temporal Dead Zone</h3>
+<p>  If you try to console.log a variable before it is declared, it is undefined. The variable has been created but the data is undefined. 
+    If you use let or const, you cannot access a variable before it has been created. 
+</p>
 <script>
   function setWidth() {
     var width = 100;
