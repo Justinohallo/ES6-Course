@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Strings!</title>
+</head>
+<body>
+<script>
+  const name = 'Snickers';
+  const age = 2;
+  const sentence = `My dog ${name} is ${age * 7} years old.`;
+  console.log(sentence);
+</script>
+<p> In Javascript we have double and single quotes to make a string. Now we have back ticks. 
+    Use back ticks, and anywhere we need to use the variable, you just use ${}. You do not
+    need to use any of the + between strings. You can pop in a function and calculate math. 
+</p>
+
+<h3> Creating HTML Fragments </h3>
+
+<script> 
+const person = {
+    name:'Wes',
+    job: 'Web Developer',
+    city:'Hamilton',
+    bio: 'HI'
+}
+const markup = `
+<div class = 'person'>
+<h2> 
+${person.name}
+<span class='job'> ${person.job}</span>
+</h2> 
+<p> ${person.city}</p>
+<p> ${person.bio}</p>
+</div>
+`;
+// console.log(markup)
+// document.body.innerHTML = markup 
+
+const dogs = [
+    {name:'Sni', age:2 },
+    {name:'HI', age:4 },
+    {name:'Poo', age:12 }]
+
+const markUp2 = `
+<ul> 
+${dogs.map(dog => `<li> ${dog.name} is ${dog.age * 7} </li>` ).join('')}
+
+`
+// document.body.innerHTML = markUp2
+
+
+</script>
+
+
+</body>
+</html>
